@@ -10,8 +10,14 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background:linear-gradient(to left, #f5b747, #f7e1b2);
+  background:linear-gradient(to left, #f5b641, #f7e1b2);
   z-index: -1;
+}
+
+nav h1, 
+nav ul {
+  font-size: 1.5rem;
+  flex: 1;
 }
 
 nav {
@@ -22,21 +28,65 @@ nav {
   align-items: center;
 }
 
+nav ul {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
 .logo {
   grid-column: 2/3;
-  font-size: 24px;
 }
 
 .hamburger {
   justify-self: end;
 }
 
-section {
+.home{
   display: flex;
-  height: 80vh;
+  height: 90vh;
   justify-content: center;
   align-items: center;
 }
+
+.project,
+.contact {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  background: linear-gradient(to right top, #005c97, #363795);
+}
+
+.contact {
+  background: linear-gradient(to right top, #353935, #e35d5b);
+}
+
+section h1 {
+  font-size: 3rem;
+}
+
+.bubble {
+  position: absolute;
+  z-index: -2;
+  background: linear-gradient(to right top, #f46b45, #eea849);
+}
+
+
+
+
+
+
 
 .home-page-image {
   height: 60%;
@@ -62,7 +112,7 @@ section {
 
 .home-page-image::after {
   content: "";
-  background: black;
+  background: white;
   width: 100%;
   height: 100%;
   position: absolute;
