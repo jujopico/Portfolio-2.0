@@ -10,7 +10,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background:linear-gradient(to left, #ba7453, #e0c3a7);
+  background:linear-gradient(to left, #f5b747, #f7e1b2);
   z-index: -1;
 }
 
@@ -53,9 +53,9 @@ section {
 .headline {
   position: absolute;
   top: 70%;
-  left: 10%;
+  right: 10%;
   font-size: 60px;
-  transform: translate(-20%, -85%);
+  transform: translate(10%, -200%);
   color: white;
   z-index: 1;
 }
@@ -68,7 +68,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 
