@@ -4,6 +4,18 @@
   border-style: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  background:linear-gradient(to left, #f5b641, #f7e1b2);
+  z-index: 2;
+}
+
 .slider {
   position: absolute;
   top: 0;
@@ -65,11 +77,11 @@ nav a {
 }
 
 .project {
-  background: linear-gradient(to right top, #005c97, #363795);
+  background: linear-gradient(to left, #00c3ff, #ffff1c);
 }
 
 .contact {
-  background: linear-gradient(to right top, #353935, #e35d5b);
+  background: linear-gradient(to left, #348f50, #56b4d3);
 }
 
 section h1 {
@@ -79,7 +91,10 @@ section h1 {
 .bubble {
   position: absolute;
   z-index: -2;
-  background: linear-gradient(to right top, #f46b45, #eea849);
+  background:linear-gradient(to left, #f5b641, #f7e1b2);
+  transform: scale(1.2);
+  transition: all 0.3s;
+  border-radius: 5px;
 }
 
 
