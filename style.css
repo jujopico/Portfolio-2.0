@@ -9,7 +9,6 @@ body {
 }
 
 header {
-  position: sticky;
   top: 0;
   background: white;
   background:linear-gradient(to left, #f5b641, #f7e1b2);
