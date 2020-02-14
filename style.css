@@ -32,6 +32,7 @@ nav {
 
 .logo {
   grid-column: 2/3;
+  margin-top: 5px;
 }
 
 .hamburger {
