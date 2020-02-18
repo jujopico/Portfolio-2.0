@@ -2,13 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border-style: border-box;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7;
 }
 
@@ -83,18 +86,18 @@ nav {
 }
 
 .heading-primary-main {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 600;
-  letter-spacing: 25px;
+  letter-spacing: 2.5rem;
   display: block;
 
   animation: moveInLeft 1s ease-out;
 }
 
 .heading-primary-sub {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 10px;
+  letter-spacing: 1rem;
   display: block;
 
   animation: moveInRight 1s ease-out;
@@ -103,11 +106,11 @@ nav {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    translate: translateX(10px);
+    translate: translateX(1rem);
   }
 
   100% {
@@ -119,11 +122,11 @@ nav {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    translate: translateX(-10px);
+    translate: translateX(-1rem);
   }
 
   100% {
