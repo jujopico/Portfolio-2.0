@@ -1,30 +1,18 @@
-$color-primary-light: #f7e1b2;
-$color-primary-dark: #f5b641;
-
-
-
-
-
-
-
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .slider {
   position: absolute;
@@ -32,49 +20,38 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(
-    to right bottom, 
-    $color-primary-dark, 
-    $color-primary-light); 
-
-  z-index: -1;
-}
+  background-image: linear-gradient(to right bottom, #f5b641, #f7e1b2);
+  z-index: -1; }
 
 nav {
   display: grid;
   grid-template-columns: 10% 1fr 1fr 10%;
   min-height: 10vh;
   color: white;
-  align-items: center;
-}
+  align-items: center; }
 
 .nav__logo {
   grid-column: 2/3;
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 .nav__hamburger {
-  justify-self: end;
-}
+  justify-self: end; }
 
-.home{
+.home {
   display: flex;
   height: 80vh;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .home__page-image {
   height: 80%;
   width: 100%;
-  position: relative;
-}
+  position: relative; }
 
 .home__page-image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
-}
+  object-fit: cover; }
 
 .home__page-image::after {
   content: "";
@@ -84,80 +61,48 @@ nav {
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 0.1;
-}
+  opacity: 0.1; }
 
 .home__text-box {
   position: absolute;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
+  transform: translate(-50%, -50%); }
 
 .heading-primary {
-  color:#fff;
-  text-transform: uppercase;
-}
+  color: #fff;
+  text-transform: uppercase; }
 
 .heading-primary--main {
   font-size: 4rem;
   font-weight: 600;
   letter-spacing: 2.5rem;
   display: block;
-
-  animation: moveInLeft 1s ease-out;
-}
+  animation: moveInLeft 1s ease-out; }
 
 .heading-primary--sub {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1rem;
   display: block;
-
-  animation: moveInRight 1s ease-out;
-}
+  animation: moveInRight 1s ease-out; }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
-  }
-
+    transform: translateX(-10rem); }
   80% {
-    translate: translateX(1rem);
-  }
-
+    translate: translateX(1rem); }
   100% {
     opacity: 1;
-    transform: translate(0);
-  }
-}
+    transform: translate(0); } }
 
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem);
-  }
-
+    transform: translateX(10rem); }
   80% {
-    translate: translateX(-1rem);
-  }
-
+    translate: translateX(-1rem); }
   100% {
     opacity: 1;
-    transform: translate(0);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+    transform: translate(0); } }
