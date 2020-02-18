@@ -1,0 +1,22 @@
+{
+  "name": "portfolio2",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jujopico/HTML-JS-Portfolio.git"
+  },
+  "author": "jun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jujopico/HTML-JS-Portfolio/issues"
+  },
+  "homepage": "https://github.com/jujopico/HTML-JS-Portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
