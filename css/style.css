@@ -27,7 +27,7 @@ nav {
   display: grid;
   grid-template-columns: 10% 1fr 1fr 10%;
   min-height: 10vh;
-  color: white;
+  color: #fff;
   align-items: center; }
 
 .nav__logo {
@@ -55,7 +55,7 @@ nav {
 
 .home__page-image::after {
   content: "";
-  background: white;
+  background: #fff;
   width: 100%;
   height: 100%;
   position: absolute;
