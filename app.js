@@ -1,5 +1,5 @@
 /* land page animation */
-const homePageImage = document.querySelector('.home__page-image');
+const homePageImage = document.querySelector('.header__image');
 const slider = document.querySelector('.slider');
 
 const timeline = new TimelineMax();
