@@ -29,10 +29,15 @@ const navSlide = () => {
   // Toggle nav
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav__active');
-  });
+
   // Animate links
   navLinks.forEach((link, index) => {
-    link.style.animation = `navLinkFade .5s ease forwards ${index / 7 + 3}s`;
+    if(link.style.animation) {
+      link.style.animation = '';
+    } else {
+      link.style.animation = `navLinkFade .5s ease forwards ${index / 7 + .6}s`;
+    }
+  });
   });
 }
 
