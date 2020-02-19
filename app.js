@@ -32,7 +32,7 @@ const navSlide = () => {
   });
   // Animate links
   navLinks.forEach((link, index) => {
-    link.style.animation = `navLinkFade .5s ease forwards ${index / 7 + 2}s`;
+    link.style.animation = `navLinkFade .5s ease forwards ${index / 7 + 3}s`;
   });
 }
 
