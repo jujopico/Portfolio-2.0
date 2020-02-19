@@ -132,8 +132,8 @@ nav {
   .nav__hamburger {
     justify-self: end;
     display: block; }
-  __active {
-    transform: translateX(0); } }
+  .nav__active {
+    transform: translateX(0%); } }
 
 .header {
   display: flex;

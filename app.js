@@ -22,19 +22,18 @@ timeline.fromTo(
   "-=1.2");
 
 /* hanmburger */
-const navslide = () => {
-  const burguer = document.querySelector('.hamburger');
+const navSlide = () => {
+  const burger = document.querySelector('.nav__hamburger');
   const nav = document.querySelector('.nav__links');
-  const navLinks = document.querySelectorAll('.nav__links li');
 
-  hamburger.addEventListener('click', () => {
+  // Toggle nav
+  burger.addEventListener('click', () => {
     nav.classList.toggle('nav__active');
   });
+
 }
 
-navLinks.forEach((link, index) => {
-  link.style.animation = `navLinkFade .5s ease forwards ${index / 7}s`
-})
 
-navslide();
+
+navSlide();
 

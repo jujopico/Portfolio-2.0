@@ -70,10 +70,10 @@ nav {
       justify-self: end;
       display: block;
     }
-  }
 
-  &__active {
-    transform: translateX(0);
+    &__active {
+      transform: translateX(0%);
+    }
   }
 }
 
