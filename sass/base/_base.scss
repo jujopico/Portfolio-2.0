@@ -4,6 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 html {
@@ -12,4 +18,8 @@ html {
 
 body {
   box-sizing: border-box;
+}
+
+main {
+  margin-top: 10vh;
 }

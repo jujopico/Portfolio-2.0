@@ -1,0 +1,14 @@
+.u-header-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom, 
+    $color-primary-dark, 
+    $color-primary-light); 
+
+  z-index: -1;
+}
+

@@ -1,16 +1,16 @@
 /* land page animation */
-const homePageImage = document.querySelector('.header__image');
-const slider = document.querySelector('.slider');
+const headerImage = document.querySelector('.header__image');
+const slider = document.querySelector('.u-header-slider');
 
 const timeline = new TimelineMax();
 
 timeline.fromTo(
-  homePageImage, 
+  headerImage, 
   1, 
   {height: "0%"}, 
   {height: "80%", ease: Power2.easeInOut}
   ).fromTo(
-  homePageImage, 
+  headerImage, 
   1.2, 
   {width: "100%"}, 
   {width: "80%", ease: Power2.easeInOut}
@@ -19,5 +19,22 @@ timeline.fromTo(
   1.2, 
   {x: "-100%"}, 
   {x: "0%", ease: Power2.easeInOut},
-  "-=1.2")
-  
+  "-=1.2");
+
+/* hanmburger */
+const navslide = () => {
+  const burguer = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav__links');
+  const navLinks = document.querySelectorAll('.nav__links li');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('nav__active');
+  });
+}
+
+navLinks.forEach((link, index) => {
+  link.style.animation = `navLinkFade .5s ease forwards ${index / 7}s`
+})
+
+navslide();
+
