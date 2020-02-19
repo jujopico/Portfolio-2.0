@@ -105,7 +105,8 @@ nav {
     width: 2.5rem;
     height: .3rem;
     background-color: #fff;
-    margin: .5rem; }
+    margin: .5rem;
+    transition: all .3s ease; }
 
 .nav__links {
   grid-column: 3/4;
