@@ -14,6 +14,13 @@ nav {
   
   &__hamburger {
     display: none;
+
+    div {
+      width: 2.5rem;
+      height: .3rem;
+      background-color: $color-white;
+      margin: .5rem;
+    }
   }
 
   &__links {
@@ -113,3 +120,4 @@ nav {
     transform: translate(-50%, -50%);
   }
 }
+

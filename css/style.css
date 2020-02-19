@@ -92,6 +92,11 @@ nav {
 
 .nav__hamburger {
   display: none; }
+  .nav__hamburger div {
+    width: 2.5rem;
+    height: .3rem;
+    background-color: #fff;
+    margin: .5rem; }
 
 .nav__links {
   grid-column: 3/4;
