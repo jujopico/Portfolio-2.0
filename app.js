@@ -25,12 +25,15 @@ timeline.fromTo(
 const navSlide = () => {
   const burger = document.querySelector('.nav__hamburger');
   const nav = document.querySelector('.nav__links');
-
+  const navLinks = document.querySelectorAll('.nav__links li');
   // Toggle nav
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav__active');
   });
-
+  // Animate links
+  navLinks.forEach((link, index) => {
+  link.style.animation = `navLinkFade .5s ease forwards ${index / 7 + .3}s`;
+  })
 }
 
 
