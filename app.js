@@ -1,4 +1,4 @@
-/* land page animation */
+/* landing page animation */
 const headerImage = document.querySelector('.header__image');
 const slider = document.querySelector('.u-header-slider');
 
