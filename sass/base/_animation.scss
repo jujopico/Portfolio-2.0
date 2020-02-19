@@ -36,3 +36,13 @@
     transform: translateX(0);
   }
 }
+
+.toggle .nav__hamburger--line1 {
+  transform: rotate(-45deg) translate(-.5rem, .6rem);
+}
+.toggle .nav__hamburger--line2 {
+  opacity: 0;
+}
+.toggle .nav__hamburger--line3 {
+  transform: rotate(45deg) translate(-.5rem, -.6rem);
+}

@@ -38,6 +38,10 @@ const navSlide = () => {
       link.style.animation = `navLinkFade .5s ease forwards ${index / 7 + .6}s`;
     }
   });
+
+  // hamburger animation
+  burger.classList.toggle('toggle');
+
   });
 }
 

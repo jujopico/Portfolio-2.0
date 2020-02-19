@@ -26,6 +26,15 @@
     opacity: 1;
     transform: translateX(0); } }
 
+.toggle .nav__hamburger--line1 {
+  transform: rotate(-45deg) translate(-0.5rem, 0.6rem); }
+
+.toggle .nav__hamburger--line2 {
+  opacity: 0; }
+
+.toggle .nav__hamburger--line3 {
+  transform: rotate(45deg) translate(-0.5rem, -0.6rem); }
+
 *,
 *::after,
 *::before {
