@@ -236,8 +236,13 @@ nav {
 
 .composition {
   position: relative; }
+  .composition:hover [class*="composition__photo--p"]:not(:hover) {
+    transform: scale(0.8);
+    opacity: .3; }
   .composition__photo {
-    position: absolute; }
+    position: absolute;
+    z-index: 10;
+    transition: all .2s; }
     .composition__photo--p1 {
       width: 15%;
       left: 2rem;
@@ -259,13 +264,16 @@ nav {
       right: 0rem;
       top: -2rem; }
     .composition__photo--p6 {
-      width: 26%;
+      width: 28%;
       top: 15rem;
       left: 28rem; }
     .composition__photo--p7 {
       width: 28%;
       left: 12rem;
       top: 14rem; }
+    .composition__photo:hover {
+      transform: scale(1.15);
+      z-index: 20; }
 
 .row {
   max-width: 114rem;
