@@ -12,9 +12,9 @@
     transition: all .2s;
 
     &--p1 { // Lumen
-      width: 15%;
-      left: 2rem;
-      top: -6rem;
+      width: 13%;
+      left: 3rem;
+      top: -5rem;
     }
 
     &--p2 { // React
@@ -30,7 +30,7 @@
     }
 
     &--p4 { //Ruby
-      width: 28%;
+      width: 26%;
       right: -2rem;
       top: 14rem;
     }
@@ -57,6 +57,5 @@
       transform: scale(1.15);
       z-index: 20;
     }
-
   }
 }

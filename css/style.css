@@ -244,9 +244,9 @@ nav {
     z-index: 10;
     transition: all .2s; }
     .composition__photo--p1 {
-      width: 15%;
-      left: 2rem;
-      top: -6rem; }
+      width: 13%;
+      left: 3rem;
+      top: -5rem; }
     .composition__photo--p2 {
       width: 35%;
       left: -7rem;
@@ -256,7 +256,7 @@ nav {
       left: 20%;
       top: -3rem; }
     .composition__photo--p4 {
-      width: 28%;
+      width: 26%;
       right: -2rem;
       top: 14rem; }
     .composition__photo--p5 {
