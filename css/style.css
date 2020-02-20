@@ -168,6 +168,56 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+nav {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: #fff; }
+  nav a {
+    position: relative; }
+    nav a::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-bottom: 0.3rem solid #fff;
+      top: 0;
+      left: 0;
+      margin-top: .4rem;
+      transform: translateX(-100%);
+      transition: transform .5s ease; }
+    nav a:hover::after {
+      transform: translateX(0); }
+  nav li {
+    overflow: hidden; }
+
+.nav__logo {
+  grid-column: 2/3;
+  font-size: 2.5rem; }
+
+.nav__burger {
+  display: none; }
+  .nav__burger div {
+    width: 2.5rem;
+    height: .3rem;
+    background-color: #fff;
+    margin: .5rem;
+    transition: all .3s ease; }
+
+.nav__links {
+  grid-column: 3/4;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-left: 12rem; }
+  .nav__links a {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    position: relative; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -195,39 +245,6 @@ body {
     width: calc(2 * ((100% - 3 * 4rem) / 4) + 4rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
-
-nav {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 10% 1fr 1fr 10%;
-  min-height: 10vh;
-  color: #fff; }
-
-.nav__logo {
-  grid-column: 2/3;
-  font-size: 2.5rem; }
-
-.nav__burger {
-  display: none; }
-  .nav__burger div {
-    width: 2.5rem;
-    height: .3rem;
-    background-color: #fff;
-    margin: .5rem;
-    transition: all .3s ease; }
-
-.nav__links {
-  grid-column: 3/4;
-  float: right;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-  margin-left: 12rem; }
-  .nav__links a {
-    color: #fff;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    position: relative; }
 
 .header {
   display: flex;

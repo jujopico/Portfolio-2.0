@@ -1,0 +1,70 @@
+nav {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: $color-white;
+
+  a {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-bottom: .3rem solid $color-white;
+      top: 0;
+      left: 0;
+      margin-top: .4rem;
+      transform: translateX(-100%);
+      transition: transform .5s ease;
+    }
+
+    &:hover::after {
+      transform: translateX(0);
+    }
+  }
+
+  li {
+    overflow: hidden;
+  }
+
+}
+
+
+
+.nav {
+  &__logo {
+    grid-column: 2/3;
+    font-size: 2.5rem;
+  }
+  
+  &__burger {
+    display: none;
+
+    div {
+      width: 2.5rem;
+      height: .3rem;
+      background-color: $color-white;
+      margin: .5rem;
+      transition: all .3s ease;
+    }
+  }
+
+  &__links {
+    grid-column: 3/4;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-left: 12rem;
+
+    a {
+      color: $color-white;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      position: relative;
+    }
+  }
+}
