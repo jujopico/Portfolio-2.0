@@ -12,3 +12,18 @@
   z-index: -1;
 }
 
+.toggle {
+  [class^=".nav__burger--line"] {
+    &1 { transform: rotate(-45deg) translate(-.5rem, .6rem); }
+    &2 { opacity: 0; }
+    &3 { transform: rotate(45deg) translate(-.5rem, -.6rem); }
+  }
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem;
+}

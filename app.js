@@ -23,7 +23,7 @@ timeline.fromTo(
 
 /* hanmburger */
 const navSlide = () => {
-  const burger = document.querySelector('.nav__hamburger');
+  const burger = document.querySelector('.nav__burger');
   const nav = document.querySelector('.nav__links');
   const navLinks = document.querySelectorAll('.nav__links li');
   // Toggle nav
@@ -39,7 +39,7 @@ const navSlide = () => {
     }
   });
 
-  // hamburger animation
+  // burger animation
   burger.classList.toggle('toggle');
 
   });
