@@ -75,7 +75,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #fad083, #f5b641);
+  background-image: linear-gradient(to right, #ffeabd, #f5b641);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -108,6 +108,21 @@ body {
 
 .u-margin-bottom-8 {
   margin-bottom: 8rem; }
+
+.btn--top {
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: #F96F38;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 100%;
+  z-index: 100; }
+  .btn--top:hover {
+    background-color: #777; }
 
 .row {
   max-width: 114rem;

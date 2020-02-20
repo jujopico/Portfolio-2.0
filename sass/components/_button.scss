@@ -1,0 +1,18 @@
+.btn--top {
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: $color-orange;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 100%;
+
+  z-index: 100;
+
+  &:hover {
+    background-color: $color-grey-dark;
+  }
+}

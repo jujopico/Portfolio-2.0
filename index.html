@@ -13,6 +13,7 @@
   <title>Jun | CodesThings</title>
 </head>
 <body>
+  <button onclick="topFunction()" class="btn btn--top">TOP</button>
   <header>
     <nav>
       <h1 class="nav__logo">
@@ -21,10 +22,10 @@
         Full Stack Developer
       </h1>
       <ul class="nav__links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav__burger">
         <div class="nav__burger--line1"></div>
@@ -47,10 +48,10 @@
   </header>
 
   <main>
-    <section class="section-about">
+    <section class="section-about" id="about">
       <div class="u-center-text u-margin-bottom-8">
         <h2 class="heading-secondary">
-          My coding adventure
+          &lt; My coding adventure /&gt;
         </h2>
       </div>
       <div class="row">
@@ -59,6 +60,9 @@
             <p class="paragraph">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae veritatis placeat minima numquam! Excepturi facilis officiis corporis optio cumque repudiandae, mollitia quidem voluptas eveniet velit, delectus consectetur dolorum. Veniam, veritatis?
             </p>
+            <button class="btn btn--white btn--animated">
+              Download my resume
+            </button>
         </div>
         <div class="col-1-of-2">
             Image composition
