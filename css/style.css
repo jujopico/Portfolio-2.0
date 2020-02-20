@@ -110,6 +110,7 @@ body {
   margin-bottom: 8rem; }
 
 .btn--top {
+  display: none;
   position: fixed;
   bottom: 2rem;
   right: 3rem;
