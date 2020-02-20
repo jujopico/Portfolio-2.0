@@ -49,10 +49,15 @@ navSlide();
 /* back to top button */
 const topBtn = document.querySelector(".btn--top");
 window.onscroll = function() {scrollFunction()};
+
 const scrollFunction = () => {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topBtn.style.display = "block";
   } else {
     topBtn.style.display = "none";
   }
+}
+const topFunction = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
