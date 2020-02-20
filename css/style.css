@@ -234,6 +234,39 @@ nav {
     text-transform: uppercase;
     position: relative; }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    position: absolute; }
+    .composition__photo--p1 {
+      width: 15%;
+      left: 2rem;
+      top: -6rem; }
+    .composition__photo--p2 {
+      width: 35%;
+      left: -7rem;
+      top: 11rem; }
+    .composition__photo--p3 {
+      width: 35%;
+      left: 20%;
+      top: -3rem; }
+    .composition__photo--p4 {
+      width: 28%;
+      right: -2rem;
+      top: 14rem; }
+    .composition__photo--p5 {
+      width: 60%;
+      right: 0rem;
+      top: -2rem; }
+    .composition__photo--p6 {
+      width: 26%;
+      top: 15rem;
+      left: 28rem; }
+    .composition__photo--p7 {
+      width: 28%;
+      left: 12rem;
+      top: 14rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }

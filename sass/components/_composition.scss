@@ -1,0 +1,50 @@
+.composition {
+  position: relative;
+
+  &__photo {
+    position: absolute;
+
+    &--p1 { // Lumen
+      width: 15%;
+      left: 2rem;
+      top: -6rem;
+    }
+
+    &--p2 { // React
+      width: 35%;
+      left: -7rem;
+      top: 11rem;
+    }
+
+    &--p3 { // Sass
+      width: 35%;
+      left: 20%;
+      top: -3rem;
+    }
+
+    &--p4 { //Ruby
+      width: 28%;
+      right: -2rem;
+      top: 14rem;
+    }
+
+    &--p5 { // JS
+      width: 60%;
+      right: 0rem;
+      top: -2rem;
+    }
+
+    &--p6 { // SQL
+      width: 26%;
+      top: 15rem;
+      left: 28rem;
+    }
+
+    &--p7 { // HTML
+      width: 28%;
+      left: 12rem;
+      top: 14rem;
+    } 
+
+  }
+}
