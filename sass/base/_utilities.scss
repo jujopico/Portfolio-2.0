@@ -7,16 +7,26 @@
   background-image: linear-gradient(
     to right bottom, 
     $color-primary-dark, 
-    $color-primary-light); 
+    $color-primary-light);
+  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); 
+  
 
   z-index: -1;
 }
 
-.toggle {
-  [class^=".nav__burger--line"] {
-    &1 { transform: rotate(-45deg) translate(-.5rem, .6rem); }
-    &2 { opacity: 0; }
-    &3 { transform: rotate(45deg) translate(-.5rem, -.6rem); }
+.u-burger-toggle {
+  .nav__burger--line {
+    &1 {
+      transform: rotate(-45deg) translate(-.5rem, .6rem);
+    }
+
+    &2 {
+      opacity: 0;
+    }
+
+    &3 {
+      transform: rotate(45deg) translate(-.5rem, -.6rem);
+    }
   }
 }
 

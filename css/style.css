@@ -71,11 +71,11 @@ body {
     animation-fill-mode: backwards; }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #ffeabd, #f5b641);
+  background-image: linear-gradient(to right, #fad083, #f5b641);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -91,15 +91,16 @@ body {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(to right bottom, #f5b641, #ffeabd);
+  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
   z-index: -1; }
 
-.toggle [class^=".nav__burger--line"]1 {
+.u-burger-toggle .nav__burger--line1 {
   transform: rotate(-45deg) translate(-0.5rem, 0.6rem); }
 
-.toggle [class^=".nav__burger--line"]2 {
+.u-burger-toggle .nav__burger--line2 {
   opacity: 0; }
 
-.toggle [class^=".nav__burger--line"]3 {
+.u-burger-toggle .nav__burger--line3 {
   transform: rotate(45deg) translate(-0.5rem, -0.6rem); }
 
 .u-center-text {
@@ -169,6 +170,34 @@ nav {
     text-transform: uppercase;
     position: relative; }
 
+.header {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center; }
+  .header__image {
+    height: 80%;
+    width: 100%;
+    position: relative; }
+    .header__image::after {
+      content: "";
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.1; }
+    .header__image img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .header__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 @media screen and (max-width: 1024px) {
   .nav__links {
     margin-left: 3rem; } }
@@ -198,35 +227,6 @@ nav {
   .nav__active {
     transform: translateX(0%); } }
 
-.header {
-  display: flex;
-  height: 80vh;
-  justify-content: center;
-  align-items: center; }
-  .header__image {
-    height: 80%;
-    width: 100%;
-    position: relative; }
-    .header__image::after {
-      content: "";
-      background: #fff;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      opacity: 0.1; }
-    .header__image img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover; }
-  .header__text-box {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-
 .section-about {
   position: relative;
-  background-color: #f7f7f7;
-  padding: 25rem 0; }
+  padding: 10rem 0; }
