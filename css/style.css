@@ -183,6 +183,18 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__side {
+    background-color: orangered;
+    color: #fff;
+    font-size: 2rem;
+    height: 45rem;
+    transition: all .8s; }
+  .card:hover .card__side {
+    transform: rotateY(180deg); }
+
 nav {
   display: grid;
   align-items: center;
@@ -351,4 +363,12 @@ nav {
 
 .section-about {
   position: relative;
-  padding: 10rem 0; }
+  padding: 15rem 0; }
+
+.section-projects {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, rgba(252, 190, 50, 0.8), rgba(255, 241, 185, 0.8)), url("../../assets/section-projects.jpg");
+  background-size: cover;
+  transform: skewY(-3deg); }
+  .section-projects > * {
+    transform: skewY(3deg); }
