@@ -49,12 +49,11 @@
   }
 
   &--resume {
-    background-color: $color-primary-dark;
-    color: $color-grey-dark;
+    background-color: $color-primary;
     left: 28%;
 
     &::after {
-    background-color: $color-primary-light;
+    background-color: $color-primary-dark;
     }
   }
 
