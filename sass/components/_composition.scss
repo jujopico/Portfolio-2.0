@@ -1,57 +1,34 @@
 .composition {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  flex-wrap: wrap;
 
-  &:hover [class*="composition__photo--p"]:not(:hover) {
+  &:hover &__photo:not(:hover) {
     transform: scale(0.8);
     opacity: .3;
   }
 
   &__photo {
-    position: absolute;
     z-index: 10;
     transition: all .2s;
 
-    &--p1 { // Lumen
-      width: 13%;
-      left: 3rem;
-      top: -5rem;
-    }
-
-    &--p2 { // React
-      width: 35%;
-      left: -7rem;
-      top: 11rem;
-    }
-
-    &--p3 { // Sass
-      width: 35%;
-      left: 20%;
-      top: -3rem;
-    }
-
-    &--p4 { //Ruby
-      width: 26%;
-      right: -2rem;
-      top: 14rem;
-    }
-
-    &--p5 { // JS
-      width: 60%;
-      right: 0rem;
-      top: -2rem;
-    }
-
-    &--p6 { // SQL
-      width: 28%;
-      top: 15rem;
-      left: 28rem;
-    }
-
-    &--p7 { // HTML
-      width: 28%;
-      left: 12rem;
-      top: 14rem;
-    } 
+    &--p1 { width: 25%; } // Ruby
+    &--p2 { width: 45%; } // JS
+    &--p3 { width: 27%; } // HTML
+    &--p4 { width: 28%; } // SQL
+    &--p5 { 
+      width: 29%;
+      margin-left: -1rem;
+   } // React
+    &--p6 { 
+      width: 12%; 
+      margin-left: .5rem
+    } // Lumen
+    &--p7 { 
+      width: 30%;
+      margin-left: 1rem;
+    } // Sass
 
     &:hover {
       transform: scale(1.15);
