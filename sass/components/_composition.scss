@@ -4,11 +4,6 @@
   justify-items: flex-start;
   flex-wrap: wrap;
 
-  &:hover &__photo:not(:hover) {
-    transform: scale(0.8);
-    opacity: .3;
-  }
-
   &__photo {
     z-index: 10;
     transition: all .2s;
@@ -22,7 +17,7 @@
       margin-left: -1rem;
    } // React
     &--p6 { 
-      width: 12%; 
+      width: 11%; 
       margin-left: .5rem
     } // Lumen
     &--p7 { 
@@ -31,8 +26,12 @@
     } // Sass
 
     &:hover {
-      transform: scale(1.15);
+      transform: scale(1.05) translateY(-.5rem);
       z-index: 20;
     }
+  }
+
+  &:hover &__photo:not(:hover) {
+    opacity: 0;
   }
 }

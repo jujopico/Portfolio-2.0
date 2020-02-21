@@ -239,9 +239,6 @@ nav {
   align-items: center;
   justify-items: flex-start;
   flex-wrap: wrap; }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.8);
-    opacity: .3; }
   .composition__photo {
     z-index: 10;
     transition: all .2s; }
@@ -257,14 +254,16 @@ nav {
       width: 29%;
       margin-left: -1rem; }
     .composition__photo--p6 {
-      width: 12%;
+      width: 11%;
       margin-left: .5rem; }
     .composition__photo--p7 {
       width: 30%;
       margin-left: 1rem; }
     .composition__photo:hover {
-      transform: scale(1.15);
+      transform: scale(1.05) translateY(-0.5rem);
       z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    opacity: 0; }
 
 .row {
   max-width: 114rem;
@@ -280,19 +279,19 @@ nav {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 4rem; }
+      margin-right: 6rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 4rem) / 2); }
+    width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 4rem) / 3); }
+    width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 4rem) / 3) + 4rem); }
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 4rem) / 4); }
+    width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 4rem) / 4) + 4rem); }
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
   display: flex;
