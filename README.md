@@ -1,4 +1,5 @@
 # HTML-CSS-JS-Portfolio
+🤦🏻‍♀️ I was about to create a simple HTML project to practice Sass and CSS - that's how and why this thing is here. I got a lot of fun during this process, while at the same time it keeps growing and looks more and more like my NEXT porfolio...Now there are a lot of duplicated codes inside ( of course HTML 🙄), but it's so cute that I can't give it up half way. So just hard code it for now and will re-do it into React after finished. 🙋🏻‍♀️
 
 ## Notes
 * Javascript for animations on landing page:
