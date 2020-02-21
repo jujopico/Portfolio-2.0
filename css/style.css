@@ -184,16 +184,30 @@ body {
   animation-fill-mode: backwards; }
 
 .card {
+  height: 45rem;
   perspective: 150rem;
-  -moz-perspective: 150rem; }
+  -moz-perspective: 150rem;
+  position: relative; }
   .card__side {
+    height: 45rem;
     background-color: orangered;
     color: #fff;
     font-size: 2rem;
-    height: 45rem;
-    transition: all .8s; }
-  .card:hover .card__side {
+    transition: all 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: orangered; }
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
     transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
 
 nav {
   display: grid;
