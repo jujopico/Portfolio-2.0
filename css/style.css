@@ -200,7 +200,8 @@ body {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 5px;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    overflow: hidden; }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
