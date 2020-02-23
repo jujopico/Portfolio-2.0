@@ -253,7 +253,9 @@ body {
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
     .card__details--btn {
-      text-align: center; }
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly; }
 
 nav {
   display: grid;
