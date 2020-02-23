@@ -148,8 +148,7 @@ body {
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.5rem;
-  color: #fff; }
+  font-size: 1.5rem; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -163,6 +162,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--resume {
+  color: #fff;
   background-color: #f9a11b;
   left: 28%; }
   .btn--resume::after {
@@ -183,6 +183,13 @@ body {
 .btn--animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
+
+.btn--github {
+  background-color: #fff;
+  color: #777;
+  left: 30%; }
+  .btn--github::after {
+    background-color: #fff; }
 
 .card {
   height: 34rem;
@@ -233,6 +240,18 @@ body {
     box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 40%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
 
 nav {
   display: grid;

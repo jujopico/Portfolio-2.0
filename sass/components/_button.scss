@@ -29,7 +29,6 @@
   transition: all .2s;
   position: relative;
   font-size: 1.5rem;
-  color: $color-white;
   }
 
   &:hover {
@@ -49,6 +48,7 @@
   }
 
   &--resume {
+    color: $color-white;
     background-color: $color-primary;
     left: 28%;
 
@@ -73,6 +73,16 @@
   &--animated {
     animation: moveInBottom .5s ease-out .75s; 
     animation-fill-mode: backwards; 
+  }
+
+  &--github {
+    background-color: $color-white;
+    color: $color-grey-dark;
+    left: 30%;
+
+    &::after {
+      background-color: $color-white;
+    }
   }
 }
 
