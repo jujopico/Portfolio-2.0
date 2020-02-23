@@ -147,8 +147,7 @@ body {
   display: inline-block;
   border-radius: 10rem;
   transition: all .2s;
-  position: relative;
-  font-size: 1.5rem; }
+  position: relative; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -163,6 +162,7 @@ body {
 
 .btn--resume {
   color: #fff;
+  font-size: 1.5rem;
   background-color: #f9a11b;
   left: 28%; }
   .btn--resume::after {
@@ -184,11 +184,11 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
-.btn--github {
+.btn--checkProj {
   background-color: #fff;
-  color: #777;
-  left: 30%; }
-  .btn--github::after {
+  font-size: 1rem;
+  color: #777; }
+  .btn--checkProj::after {
     background-color: #fff; }
 
 .card {
@@ -252,6 +252,8 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+    .card__details--btn {
+      text-align: center; }
 
 nav {
   display: grid;

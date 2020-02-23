@@ -28,7 +28,6 @@
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.5rem;
   }
 
   &:hover {
@@ -49,6 +48,7 @@
 
   &--resume {
     color: $color-white;
+    font-size: 1.5rem;
     background-color: $color-primary;
     left: 28%;
 
@@ -75,10 +75,10 @@
     animation-fill-mode: backwards; 
   }
 
-  &--github {
+  &--checkProj {
     background-color: $color-white;
+    font-size: 1rem;
     color: $color-grey-dark;
-    left: 30%;
 
     &::after {
       background-color: $color-white;
