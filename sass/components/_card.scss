@@ -48,6 +48,10 @@
     &--1 {
       background-image: url("../../assets/projects/wynstore.png");
     }
+
+    &--2 {
+      background-image: url("../../assets/projects/videojuego.png");
+    }
   }
 
   &__heading {
@@ -67,14 +71,11 @@
     padding: .5rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-
-    &--1 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-yellow-light, .85),
-        rgba($color-yellow-dark, .85)
-      );
-    }   
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-yellow-light, .85),
+      rgba($color-yellow-dark, .85)
+    );  
   }
 
   &__details {
