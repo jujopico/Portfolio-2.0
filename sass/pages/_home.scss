@@ -17,3 +17,28 @@
     transform: skewY(3deg);
   }
 }
+
+.section-contact {
+  padding: 15rem 0;
+  margin-top: -4rem;
+
+  .contact {
+    height: 50rem;
+    background-image: 
+      linear-gradient(
+        105deg,
+        rgba($color-white, .7) 0%,
+        rgba($color-white, .6) 50%,
+        transparent 50%),
+      url("../../assets/contact-bkg.jpg");
+    background-size: 100%;
+    background-position: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .3);
+
+    &__form {
+      width: 50%;
+      padding: 6rem;
+    }
+  }
+}
