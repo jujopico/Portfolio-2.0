@@ -26,8 +26,8 @@
       transform: rotateY(180deg);
       background-image: linear-gradient(
           to right bottom,
-          $color-yellow-dark,
-          $color-yellow-light
+          $color-orange,
+          $color-primary
         );
     }
   }
@@ -81,8 +81,8 @@
     box-decoration-break: clone;
     background-image: linear-gradient(
       to right bottom,
-      rgba($color-yellow-light, .85),
-      rgba($color-yellow-dark, .85)
+      rgba($color-orange, .8),
+      rgba($color-primary, .8)
     );  
   }
 
