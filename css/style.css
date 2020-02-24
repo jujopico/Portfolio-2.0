@@ -337,6 +337,8 @@ body {
     border-bottom: 3px solid #55c57a; }
   .form__input:focus:invalid {
     border-bottom: 3px solid #eb4d55; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
 
 nav {
   display: grid;
