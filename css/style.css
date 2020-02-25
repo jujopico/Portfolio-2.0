@@ -394,6 +394,30 @@ nav {
     text-transform: uppercase;
     position: relative; }
 
+.footer {
+  background-color: #999;
+  padding: 6rem 0;
+  font-size: 1.4rem;
+  color: #eee;
+  display: flex;
+  justify-content: center; }
+  .footer__logo-box {
+    text-align: center; }
+  .footer__logo {
+    width: 8rem;
+    height: auto; }
+  .footer__link {
+    margin-top: 7rem; }
+    .footer__link--logo-1 {
+      width: 5rem;
+      height: auto;
+      margin-right: 3rem; }
+    .footer__link--logo-2 {
+      width: 5rem;
+      height: auto;
+      transform: scale(1.15);
+      margin-left: 3rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }

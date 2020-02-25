@@ -1,0 +1,34 @@
+.footer {
+  background-color: $color-grey-dark-2;
+  padding: 6rem 0;
+  font-size: 1.4rem;
+  color: $color-grey-light-2;
+  display: flex;
+  justify-content: center;
+
+  &__logo-box{
+    text-align: center;
+  }
+
+  &__logo {
+    width: 8rem;
+    height: auto;
+  }
+
+  &__link {
+   margin-top: 7rem;
+
+   &--logo-1 {
+    width: 5rem;
+    height: auto;
+    margin-right: 3rem;
+   }
+
+   &--logo-2 {
+    width: 5rem;
+    height: auto;
+    transform: scale(1.15);
+    margin-left: 3rem;
+   }
+  }
+}
