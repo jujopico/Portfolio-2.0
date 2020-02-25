@@ -18,17 +18,34 @@
   &__link {
    margin-top: 7rem;
 
-   &--logo-1 {
-    width: 5rem;
-    height: auto;
-    margin-right: 3rem;
-   }
+    &--logo {
+      width: 5rem;
+      height: auto;
+      transition: all .2s;
 
-   &--logo-2 {
-    width: 5rem;
-    height: auto;
-    transform: scale(1.15);
-    margin-left: 3rem;
-   }
+      &:hover,
+      &:active {
+        transform: rotate(15deg);
+      }
+
+      &-1 {
+        margin-right: 3rem;
+
+        &:hover,
+        &:active {
+          transform: rotate(15deg) scale(.9);
+        }
+      }
+
+      &-2 {
+        transform: scale(1.15);
+        margin-left: 3rem;
+      }
+
+    }
+
+
+
+   
   }
 }

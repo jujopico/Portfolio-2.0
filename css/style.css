@@ -408,15 +408,19 @@ nav {
     height: auto; }
   .footer__link {
     margin-top: 7rem; }
-    .footer__link--logo-1 {
+    .footer__link--logo {
       width: 5rem;
       height: auto;
-      margin-right: 3rem; }
-    .footer__link--logo-2 {
-      width: 5rem;
-      height: auto;
-      transform: scale(1.15);
-      margin-left: 3rem; }
+      transition: all .2s; }
+      .footer__link--logo:hover, .footer__link--logo:active {
+        transform: rotate(15deg); }
+      .footer__link--logo-1 {
+        margin-right: 3rem; }
+        .footer__link--logo-1:hover, .footer__link--logo-1:active {
+          transform: rotate(15deg) scale(0.9); }
+      .footer__link--logo-2 {
+        transform: scale(1.15);
+        margin-left: 3rem; }
 
 .row {
   max-width: 114rem;
