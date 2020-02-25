@@ -19,6 +19,7 @@
 }
 
 .btn {
+  &,
   &:link,
   &:visited {
   text-transform: uppercase;
@@ -28,6 +29,7 @@
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
+  outline: none;
   }
 
   &:hover {
@@ -41,7 +43,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 .5rem 1rem rgba($color-black,.2);
   }
@@ -51,6 +55,7 @@
     font-size: 1.5rem;
     background-color: $color-primary;
     left: 28%;
+    border: none;
 
     &::after {
     background-color: $color-primary-dark;
