@@ -8,6 +8,8 @@
 * Javascript for animations on landing page:
   Get TweenMax and TimelineMax Animation JS on (https://cdnjs.com/libraries/gsap/2.1.3) 
 
+* Formspree `name="name"/ name="replyto"`
+
 ## How to install SASS locally?
 * `npm init` 
 * `npm install node-sass --save-dev`
