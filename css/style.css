@@ -417,7 +417,8 @@ body {
   display: flex;
   height: 80vh;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow-x: hidden; }
   @media (max-width: 56.25em) {
     .header {
       overflow-x: hidden; } }
