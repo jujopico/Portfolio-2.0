@@ -418,6 +418,9 @@ body {
   height: 80vh;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 56.25em) {
+    .header {
+      overflow-x: hidden; } }
   .header__image {
     height: 80%;
     width: 100%;
