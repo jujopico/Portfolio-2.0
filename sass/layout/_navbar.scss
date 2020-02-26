@@ -14,7 +14,6 @@ nav {
 
   &__item {
     display: inline-block;
-    position: fixed;
 
     @include respond(tab-port) {
       opacity: 0;
