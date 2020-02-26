@@ -128,6 +128,10 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
   z-index: -1; }
+  @media (max-width: 39.38em) {
+    .u-header-slider {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%); } }
 
 .u-burger-toggle .nav__burger--line1 {
   transform: rotate(-45deg) translate(-0.5rem, 0.6rem); }
