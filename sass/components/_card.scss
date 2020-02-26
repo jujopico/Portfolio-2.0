@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     overflow: hidden;
 
@@ -114,26 +114,48 @@
 
   @include respond(tab-port){
     height: auto;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   
     &__side {
       height: auto;
       color:#fff;
       font-size: 2rem;
       position: relative;
-      border-radius: 5px;
+      box-shadow: none;
   
+      &--front {
+        margin-bottom: -5px;
+        z-index: 100;
+      }
+
       &--back {
         transform: rotateY(0);
-        background-image: linear-gradient(
-            to right bottom,
-            $color-orange,
-            $color-primary
-          );
+        background-image: none;
+        background-color: white;
+
       }
+    }
+
+    &__picture {
+      clip-path: polygon(0 0%, 100% 0, 100% 85%, 0 100%);
+    }
+
+    &__details ul li {
+      color: $color-grey-dark;
     }
   
     &:hover &__side--front {
       transform: rotateY(0);
+    }
+
+    .btn--checkProj{
+      background-color: $color-primary !important;
+      color: $color-white;
+    }
+
+    &__heading {
+      transform: skewY(-6deg);
     }
   }
 }
