@@ -149,10 +149,16 @@ body {
   margin-bottom: 10rem; }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
@@ -318,6 +324,20 @@ body {
       text-align: center;
       display: flex;
       justify-content: space-evenly; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto; }
+      .card__side {
+        height: auto;
+        color: #fff;
+        font-size: 2rem;
+        position: relative;
+        border-radius: 5px; }
+        .card__side--back {
+          transform: rotateY(0);
+          background-image: linear-gradient(to right bottom, #F96F38, #f9a11b); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); } }
 
 .composition {
   display: flex;
@@ -534,7 +554,10 @@ nav {
 
 .section-about {
   position: relative;
-  padding: 15rem 0; }
+  padding: 10rem 0 12rem 0; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 8rem 0 9rem 0; } }
 
 .section-projects {
   padding: 13rem 0;
@@ -543,10 +566,17 @@ nav {
   transform: skewY(-3deg); }
   .section-projects > * {
     transform: skewY(3deg); }
+  @media (max-width: 56.25em) {
+    .section-projects {
+      padding: 10rem 0; } }
 
 .section-contact {
   padding: 15rem 0;
   margin-top: -4rem; }
+  @media (max-width: 56.25em) {
+    .section-contact {
+      padding: 10rem 0;
+      margin-top: -2rem; } }
   .section-contact .contact {
     height: 50rem;
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.6) 50%, transparent 50%), url("../../assets/contact-bkg.jpg");

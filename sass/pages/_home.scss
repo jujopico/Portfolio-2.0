@@ -1,6 +1,10 @@
 .section-about {
   position: relative;
-  padding: 15rem 0;
+  padding: 10rem 0 12rem 0;
+
+  @include respond(tab-port){
+    padding: 8rem 0 9rem 0 ;
+  }
 }
 
 .section-projects {
@@ -16,11 +20,20 @@
   & > * {
     transform: skewY(3deg);
   }
+
+  @include respond(tab-port){
+    padding: 10rem 0;
+  } 
 }
 
 .section-contact {
   padding: 15rem 0;
   margin-top: -4rem;
+
+  @include respond(tab-port){
+    padding: 10rem 0;
+    margin-top: -2rem;
+  } 
 
   .contact {
     height: 50rem;
