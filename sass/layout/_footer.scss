@@ -6,6 +6,10 @@
   display: flex;
   justify-content: center;
 
+  @include respond(tab-port){
+    padding: 4rem 4rem;
+  }
+
   &__logo-box{
     text-align: center;
   }
