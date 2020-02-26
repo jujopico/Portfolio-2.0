@@ -3,11 +3,6 @@
   height: 80vh;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
-
-  @include respond(tab-port) {
-    overflow-x: hidden;
-  }
 
   &__image {
     height: 80%;

@@ -39,7 +39,8 @@ a:link {
   text-decoration: none; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -51,11 +52,10 @@ html {
       font-size: 50%; } }
 
 body {
-  box-sizing: border-box;
-  overflow-x: hidden; }
+  box-sizing: border-box; }
   @media (max-width: 56.25em) {
     body {
-      overflow-x: hidden; } }
+      overflow-x: hidden !important; } }
 
 main {
   margin-top: 9vh; }
@@ -75,6 +75,10 @@ body {
     letter-spacing: 2.5rem;
     display: block;
     animation: moveInLeft 1s ease-out; }
+    @media (max-width: 39.38em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 3rem; } }
   .heading-primary--sub {
     font-size: 2rem;
     font-weight: 700;
@@ -82,6 +86,9 @@ body {
     display: block;
     animation: moveInRight 1s ease-in;
     animation-fill-mode: backwards; }
+    @media (max-width: 39.38em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-weight: 700;
@@ -96,6 +103,12 @@ body {
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 39.38em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
 
 .heading-tertiary {
   font-size: 2rem;
@@ -417,11 +430,7 @@ body {
   display: flex;
   height: 80vh;
   justify-content: center;
-  align-items: center;
-  overflow-x: hidden; }
-  @media (max-width: 56.25em) {
-    .header {
-      overflow-x: hidden; } }
+  align-items: center; }
   .header__image {
     height: 80%;
     width: 100%;
@@ -449,7 +458,7 @@ nav {
 
 .nav__item {
   display: inline-block;
-  overflow: hidden; }
+  position: fixed; }
   @media (max-width: 56.25em) {
     .nav__item {
       opacity: 0; } }
@@ -496,7 +505,7 @@ nav {
       margin-left: 3rem; } }
   @media (max-width: 56.25em) {
     .nav__list {
-      position: absolute;
+      position: fixed;
       right: 0;
       top: 10vh;
       height: 90vh;

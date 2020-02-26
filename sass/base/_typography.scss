@@ -16,6 +16,11 @@ body {
     display: block;
   
     animation: moveInLeft 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 3rem;
+    }
   }
   
   &--sub {
@@ -26,6 +31,10 @@ body {
   
     animation: moveInRight 1s ease-in;
     animation-fill-mode: backwards; 
+
+    @include respond(phone) {
+      letter-spacing: .5rem;
+    }
   }
 }
 
@@ -43,6 +52,14 @@ body {
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
   }
 }
 
