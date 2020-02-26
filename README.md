@@ -18,7 +18,18 @@
   } in package.json
 * `npm run compile:sass`
 
-  
+## About Meida Queries (@mixin and @if)
+  ### $breakpoint arguement choices: 
+  * 0 - 600px:    phone
+  * 600- 900px:   tablet portrait
+  * 900 -1200px:  tablet landscape
+  * [1200 - 1800] is where normal styles apply
+  * 1800px + :    big desktop
+
+  ### change px into em:
+  1em = 1em = 16px 
+  rems and ems in media query are not effected by root font setting, like in this proj html font size is set to 62.5%
+  em is the best choice for media queries cuz rem stops working in some browsers
 
 
 
