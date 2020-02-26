@@ -24,8 +24,8 @@ timeline.fromTo(
 /* hanmburger */
 const navSlide = () => {
   const burger = document.querySelector('.nav__burger');
-  const nav = document.querySelector('.nav__links');
-  const navLinks = document.querySelectorAll('.nav__links li');
+  const nav = document.querySelector('.nav__list');
+  const navLinks = document.querySelectorAll('.nav__list li');
   // Toggle nav
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav__active');

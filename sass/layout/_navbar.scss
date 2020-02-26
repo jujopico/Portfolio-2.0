@@ -4,31 +4,6 @@ nav {
   grid-template-columns: 10% 1fr 1fr 10%;
   min-height: 10vh;
   color: $color-white;
-
-  a {
-    position: relative;
-
-    &::after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      border-bottom: .3rem solid $color-white;
-      top: 0;
-      left: 0;
-      margin-top: .4rem;
-      transform: translateX(-100%);
-      transition: transform .5s ease;
-    }
-
-    &:hover::after {
-      transform: translateX(0);
-    }
-  }
-
-  li {
-    overflow: hidden;
-  }
 }
 
 .nav {
@@ -36,7 +11,44 @@ nav {
     grid-column: 2/3;
     font-size: 2.5rem;
   }
-  
+
+  &__item {
+    display: inline-block;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+      opacity: 0;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: $default-font-size;
+      display: inline-block;
+      font-weight: 700;
+      padding: .5rem 2rem .5rem 1rem;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white 50%
+      );
+      background-size: 230%;
+      transition:  all .4s;
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary;
+      transform: translateX(1rem);
+    }
+  }
+
   &__burger {
     display: none;
 
@@ -54,7 +66,7 @@ nav {
     }
   }
 
-  &__links {
+  &__list {
     grid-column: 3/4;
     float: right;
     display: flex;
@@ -71,7 +83,8 @@ nav {
       right: 0;
       top: 10vh;
       height: 90vh;
-      background-color: rgba($color-primary-dark, .8);
+      background-color: 
+        rgba($color-primary-dark, .8);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -79,22 +92,17 @@ nav {
       padding: 20rem 0;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
+      border-radius: 3px;
 
       z-index: 99;
     }
 
-    a {
-      color: $color-white;
-      font-size: $default-font-size;
-      text-transform: uppercase;
-      position: relative;
-    }
-
-    li {
-      @include respond(tab-port) {
-        opacity: 0;
-      }
-    }
+    // a {
+    //   color: $color-white;
+    //   font-size: $default-font-size;
+    //   text-transform: uppercase;
+    //   position: relative;
+    // }
   }
 
   &__active {
