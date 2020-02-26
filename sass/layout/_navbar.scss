@@ -47,6 +47,11 @@ nav {
       margin: .5rem;
       transition: all .3s ease;
     }
+
+    @include respond(tab-port) {
+      justify-self: end;
+      display: block;
+    }
   }
 
   &__links {
@@ -57,11 +62,44 @@ nav {
     font-weight: 600;
     margin-left: 12rem;
 
+    @include respond(tab-land) {
+      margin-left: 3rem;
+    }
+
+    @include respond(tab-port) {
+      position: absolute;
+      right: 0;
+      top: 10vh;
+      height: 90vh;
+      background-color: rgba($color-primary-dark, .8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      padding: 20rem 0;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+
+      z-index: 99;
+    }
+
     a {
       color: $color-white;
       font-size: $default-font-size;
       text-transform: uppercase;
       position: relative;
+    }
+
+    li {
+      @include respond(tab-port) {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__active {
+    @include respond(tab-port) {
+      transform: translateX(0%);
     }
   }
 }

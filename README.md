@@ -22,6 +22,8 @@
 
   For more information: https://sass-lang.com/documentation/at-rules/mixin
 
+  ### Set 1rem = 10px in the root 
+
   ### About $breakpoint arguement choices: 
   * 0 - 600px:    phone
   * 600- 900px:   tablet portrait
@@ -30,7 +32,7 @@
   * 1800px + :    big desktop
 
   ### Change px into em:
-  * 1em = 1em = 16px 
+  * 1em = 1rem = 16px 
   * rems and ems in media query are not effected by root font setting, like in this proj html font size is set to 62.5%
   * em is the best choice for media queries cuz rem stops working in some browsers
 
