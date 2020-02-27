@@ -130,7 +130,7 @@ body {
   z-index: -1; }
   @media (max-width: 39.38em) {
     .u-header-slider {
-      height: 97%; } }
+      height: 100%; } }
 
 .u-burger-toggle .nav__burger--line1 {
   transform: rotate(-45deg) translate(-0.5rem, 0.6rem); }
