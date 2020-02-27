@@ -8,15 +8,15 @@
     to right bottom, 
     $color-primary-dark, 
     $color-primary-light);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); 
-  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); 
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); 
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); 
   
   z-index: -1;
 
   @include respond(phone) {
     height: 90%;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%); 
-    clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%); 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); 
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); 
   }
 }
 
