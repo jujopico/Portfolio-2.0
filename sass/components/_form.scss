@@ -1,4 +1,6 @@
 .form {
+  text-align: center;
+
   &__group {
     margin-bottom: 2rem;
   }
@@ -15,6 +17,10 @@
     width: 90%;
     display: block;
     transition: all .3s;
+
+    @include respond(tab-port){
+      width: 100%;
+    }
 
     &:focus {
       outline: none;
