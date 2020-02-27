@@ -13,9 +13,9 @@
   
   z-index: -1;
 
-  // @include respond(phone) {
-  //   height: 90%;
-  // }
+  @include respond(phone) {
+    height: 95%;
+  }
 }
 
 .u-burger-toggle {
