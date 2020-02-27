@@ -152,10 +152,13 @@
     .btn--checkProj{
       background-color: $color-primary !important;
       color: $color-white;
+      width: 33%;
     }
 
     &__heading {
       transform: skewY(-6deg);
+      width: 55%;
+      bottom: 1.5rem;
     }
   }
 }

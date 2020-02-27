@@ -131,8 +131,8 @@ body {
   @media (max-width: 39.38em) {
     .u-header-slider {
       height: 90%;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%); } }
 
 .u-burger-toggle .nav__burger--line1 {
   transform: rotate(-45deg) translate(-0.5rem, 0.6rem); }
@@ -206,7 +206,7 @@ body {
   color: #fff;
   font-size: 1.5rem;
   background-color: #f9a11b;
-  left: 28%;
+  left: 22%;
   border: none; }
   .btn--resume::after {
     background-color: #fcbe32; }
@@ -351,9 +351,12 @@ body {
         transform: rotateY(0); }
       .card .btn--checkProj {
         background-color: #f9a11b !important;
-        color: #fff; }
+        color: #fff;
+        width: 33%; }
       .card__heading {
-        transform: skewY(-6deg); } }
+        transform: skewY(-6deg);
+        width: 55%;
+        bottom: 1.5rem; } }
 
 .composition {
   display: flex;
@@ -583,25 +586,25 @@ nav {
   padding: 10rem 0 12rem 0; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 8rem 0 9rem 0; } }
+      padding: 5rem 0 9rem 0; } }
 
 .section-projects {
   padding: 13rem 0;
   background-image: linear-gradient(to right bottom, rgba(252, 190, 50, 0.8), rgba(255, 241, 185, 0.8)), url("../../assets/section-projects.jpg");
   background-size: cover;
-  transform: skewY(-3deg); }
+  transform: skewY(-4deg); }
   .section-projects > * {
-    transform: skewY(3deg); }
+    transform: skewY(4deg); }
   @media (max-width: 56.25em) {
     .section-projects {
       padding: 10rem 0; } }
 
 .section-contact {
-  padding: 15rem 0;
-  margin-top: -4rem; }
+  padding: 12rem 0; }
   @media (max-width: 56.25em) {
     .section-contact {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("../../img/nat-10.jpg"); } }
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("../../img/nat-10.jpg");
+      padding: 10rem 0; } }
   .section-contact .contact {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.6) 50%, transparent 50%), url("../../assets/contact-bkg.jpg");
     background-size: 100%;

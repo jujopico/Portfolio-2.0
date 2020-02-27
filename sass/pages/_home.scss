@@ -3,7 +3,7 @@
   padding: 10rem 0 12rem 0;
 
   @include respond(tab-port){
-    padding: 8rem 0 9rem 0 ;
+    padding: 5rem 0 9rem 0 ;
   }
 }
 
@@ -15,10 +15,10 @@
     rgba($color-primary-light, .8)),
     url("../../assets/section-projects.jpg");
   background-size: cover;
-  transform: skewY(-3deg);
+  transform: skewY(-4deg);
 
   & > * {
-    transform: skewY(3deg);
+    transform: skewY(4deg);
   }
 
   @include respond(tab-port){
@@ -27,8 +27,7 @@
 }
 
 .section-contact {
-  padding: 15rem 0;
-  margin-top: -4rem;
+  padding: 12rem 0;
 
   @include respond(tab-port){
     background-image: 
@@ -37,6 +36,7 @@
       rgba($color-white, .9) 0%,
       rgba($color-white, .9) 100%),
       url("../../img/nat-10.jpg");
+    padding: 10rem 0;
   } 
 
   .contact {
